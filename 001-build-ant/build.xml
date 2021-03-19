@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="build-ant" default="compile" basedir=".">
+    <description>The demo Ant project.</description>
+
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+
+    <target name="greeting" description="Greets you.">
+        <echo>This is Ant speaking, not the Java itself!</echo>
+    </target>
+
+    <target name="compile" description="Compiles the project.">
+        <mkdir dir="${build.dir}"/>
+        <javac destdir="${build.dir}">
+            <src path="${src.dir}"/>
+        </javac>
+    </target>
+</project>
