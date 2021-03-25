@@ -14,4 +14,4 @@ mvn package
 java -cp target/class-as-behavior-0.0.1.jar UsingBehavior
 ```
 
-Note that counter objects do not share their `value`s, each has it's own!
+Note that counter objects do not share their `value`s, each has its own!
